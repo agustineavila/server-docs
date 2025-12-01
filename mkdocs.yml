@@ -1,8 +1,8 @@
 site_name: "Documentación del Server"
 site_url: "http://192.168.68.19/docs"
-repo_url: "https://github.com/TU_USUARIO/server-docs"
+repo_url: "https://github.com/agustineavila/server-docs.git"
 repo_name: "server-docs"
-
+strict: true
 theme:
   name: material
   language: es
@@ -36,9 +36,23 @@ theme:
 nav:
   - Inicio: index.md
   - Guías:
-      - NGINX: guides/nginx.md
-      - Servicios: guides/servicios.md
+      - Workflow de sitios web: guides/workflow.md
+      - Uso de entornos virtuales: guides/virtualenv.md
   - Seguridad:
-      - Firewall: security/firewall.md
+      - Puertos importantes: security/ports.md
+      - Firewall UFW: security/ufw.md
   - Server:
-      - Estructura: server/estructura.md
+      - Configuración de NGINX: server/nginx.md
+      - Configuración de Docker: server/docker.md
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
