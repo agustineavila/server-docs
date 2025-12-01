@@ -1,0 +1,23 @@
+# --- MKDOCS ---
+site/
+venv/
+
+# --- PYTHON ---
+__pycache__/
+*.pyc
+
+# --- EDITORES ---
+*.swp
+*.swo
+*~
+
+# --- LOGS ---
+*.log
+
+# --- SISTEMA ---
+.DS_Store
+
+# --- MISC ---
+# Archivos de respaldo de herramientas (por si aparecen)
+*.bak
+*.tmp
