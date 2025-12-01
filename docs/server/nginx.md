@@ -1,0 +1,3 @@
+# Configuración de Nginx
+
+Pendiente...

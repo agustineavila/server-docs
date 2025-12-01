@@ -1,0 +1,3 @@
+# Cómo usar el entorno virtual
+
+Pendiente...

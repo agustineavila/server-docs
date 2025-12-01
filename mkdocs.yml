@@ -1,0 +1,52 @@
+site_name: Server Docs
+site_url: http://192.168.68.19/docs/
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar al modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar al modo claro
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.tabs
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+
+nav:
+  - Inicio: index.md
+  - Guías:
+      - Flujo de despliegue: guides/workflow.md
+      - Entorno virtual: guides/virtualenv.md
+  - Servidor:
+      - Nginx: server/nginx.md
+      - Docker: server/docker.md
+  - Seguridad:
+      - Firewall: security/ufw.md
+      - Puertos abiertos: security/ports.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.snippets
+
+plugins:
+  - search
